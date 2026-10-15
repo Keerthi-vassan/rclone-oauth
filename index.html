@@ -1,0 +1,47 @@
+<!doctype html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>rclone-gdrive</title>
+<style>
+  :root { color-scheme: light dark; }
+  body { max-width: 42rem; margin: 3rem auto; padding: 0 1.25rem;
+         font: 16px/1.65 system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
+  h1 { font-size: 1.6rem; margin-bottom: .25rem; }
+  .sub { opacity: .7; margin-top: 0; }
+  code { background: rgba(127,127,127,.18); padding: .1em .35em; border-radius: 3px; }
+  footer { margin-top: 2.5rem; font-size: .9rem; opacity: .7; }
+</style>
+
+<h1>rclone-gdrive</h1>
+<p class="sub">A personal command-line tool for mounting its author's own Google Drive.</p>
+
+<p>
+  rclone-gdrive is a private configuration of
+  <a href="https://rclone.org/">rclone</a>, an open-source command-line program,
+  used by its author to mount their own Google Drive as a folder on their own
+  Linux computer. It is not a product, not distributed, and has no users other
+  than its author.
+</p>
+
+<h2>What it does</h2>
+<p>
+  It presents the author's Google Drive as a local directory
+  (<code>~/GoogleDrive</code>), so ordinary programs can open, edit and save
+  files there. Reading a file downloads it; saving uploads it. That is the
+  whole of its functionality.
+</p>
+
+<h2>Why it requests Google Drive access</h2>
+<p>
+  Mounting a Drive as a read-write filesystem requires the
+  <code>https://www.googleapis.com/auth/drive</code> scope, because any file in
+  the Drive may be opened or written at any time. Access is used solely to serve
+  the author's own files to the author's own computer.
+</p>
+
+<h2>Privacy</h2>
+<p>See the <a href="privacy.html">privacy policy</a>.</p>
+
+<footer>
+  Maintained by <a href="https://github.com/Keerthi-vassan">Keerthi-vassan</a>.
+</footer>
